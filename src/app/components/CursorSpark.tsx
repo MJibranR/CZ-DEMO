@@ -36,12 +36,16 @@ export default function CursorSpark() {
           const pos = positions.current[i];
           const scale = 1 - i * 0.05; // trailing dots slightly smaller
           const size = 12 + (numDots - i) * 3; // bigger circles
+
           dot.style.width = `${size}px`;
           dot.style.height = `${size}px`;
           dot.style.borderRadius = "50%";
           dot.style.backgroundColor = "#9b5de5"; // purple
           dot.style.transform = `translate(${pos.x - size / 2}px, ${pos.y - size / 2}px) scale(${scale})`;
           dot.style.opacity = `${1 - i * 0.08}`;
+
+          // **Added glow**
+          dot.style.boxShadow = `0 0 ${5 + i * 2}px rgba(155, 93, 229, 0.7)`;
         }
       }
 
