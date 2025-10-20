@@ -8,7 +8,7 @@ export default function LoadingVideo({ onFinish }: { onFinish?: () => void }) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (videoRef.current) videoRef.current.playbackRate = 1.5;
+    if (videoRef.current) videoRef.current.playbackRate = 2.5;
   }, []);
 
   useEffect(() => {
