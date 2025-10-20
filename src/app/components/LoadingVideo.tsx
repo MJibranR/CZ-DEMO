@@ -1,0 +1,62 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
+
+export default function LoadingVideo({ onFinish }: { onFinish?: () => void }) {
+  const [fadeOut, setFadeOut] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Increase video speed
+  useEffect(() => {
+    if (videoRef.current) videoRef.current.playbackRate = 1.5;
+  }, []);
+
+  // Update progress bar
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (videoRef.current) {
+        const pct =
+          (videoRef.current.currentTime / videoRef.current.duration) * 100;
+        setProgress(Math.min(pct, 100));
+      }
+    }, 50);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleVideoEnd = () => {
+    setFadeOut(true);
+    setTimeout(() => onFinish && onFinish(), 700);
+  };
+
+  return (
+    <div
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-700 ${
+        fadeOut ? "opacity-0" : "opacity-100"
+      }`}
+    >
+      <video
+        ref={videoRef}
+        src="/loading.mp4"
+        autoPlay
+        playsInline
+        muted
+        onEnded={handleVideoEnd}
+        className="w-full h-full object-cover absolute top-0 left-0 z-40"
+      />
+      {/* Loading text and progress */}
+      <div className="absolute z-50 flex flex-col items-center">
+        <div className="text-white font-bold text-2xl animate-pulse mb-4">
+          Loading...
+        </div>
+        {/* Progress bar */}
+        <div className="w-64 h-2 bg-gray-600 rounded-full overflow-hidden">
+          <div
+            className="h-full bg-purple-600 transition-all duration-50"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
