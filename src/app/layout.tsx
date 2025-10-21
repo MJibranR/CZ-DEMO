@@ -1,31 +1,36 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import ClientWrapper from "./components/ClientWrapper";
+import type { Metadata } from "next";
 import CursorSpark from "./components/CursorSpark";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: 'Combine Zenith',
-  description: 'Transforming visions into digital success',
+  title: "Zenith",
+  description: "A creative Next.js project with custom fonts and Tailwind",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* <ClientWrapper>{children}</ClientWrapper> */}
+      <body
+        className="min-h-screen text-[var(--color-foreground)] bg-[var(--color-background)]"
+        style={{
+          fontFamily: "var(--font-montserrat)",
+          background:
+            "linear-gradient(to bottom right, #000000 0%, #200053 50%, #000000 100%)",
+          backgroundAttachment: "fixed",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <Header />
         <CursorSpark />
         {children}
+        <Footer />
       </body>
     </html>
   );
