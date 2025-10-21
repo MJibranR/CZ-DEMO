@@ -1,10 +1,13 @@
-export default function HomePage() {
+import Header from '@/app/components/Header';
+import HeroSection from '@/app/components/HeroSection';
+import Footer from '@/app/components/Footer';
+
+export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center w-full h-screen bg-gray-900 text-white">
-      <h1 className="text-5xl font-bold mb-4">Welcome to My Homepage</h1>
-      <p className="text-lg">
-        This is the main content of the homepage. The loading video has already played.
-      </p>
+    <main className="min-h-screen bg-gradient-to-b from-purple-900 via-purple-950 to-black">
+      <Header />
+      <HeroSection />
+      <Footer />
     </main>
   );
 }
