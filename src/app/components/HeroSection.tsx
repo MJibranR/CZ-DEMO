@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
@@ -28,7 +26,7 @@ export default function HeroSection() {
 
             <p className="text-purple-200 text-lg md:text-xl max-w-xl">
               Combine Zenith delivers innovative strategies and unparalleled
-              digital solutions to elevate your brand's presence and impact.
+              digital solutions to elevate your brand&apos;s presence and impact.
             </p>
 
             <button className="px-8 py-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all transform hover:scale-105 shadow-lg">
