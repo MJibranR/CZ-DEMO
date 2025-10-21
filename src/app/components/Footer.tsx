@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-purple-800/30 text-center text-purple-300">
-          <p>&copy; 2024 Combine Zenith. All rights reserved.</p>
+          <p>&copy; 2025 Combine Zenith. All rights reserved.</p>
         </div>
       </div>
     </footer>
