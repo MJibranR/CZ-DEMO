@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import CursorSpark from "./CursorSpark";
-import LoadingVideo from "./LoadingVideo";
+// import LoadingVideo from "./LoadingVideo";
 
 export default function ClientWrapper({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
@@ -11,9 +11,9 @@ export default function ClientWrapper({ children }: { children: React.ReactNode 
     <>
       <CursorSpark />
 
-      {loading && <LoadingVideo onFinish={() => setLoading(false)} />}
+      {/* {loading && <LoadingVideo onFinish={() => setLoading(false)} />}
 
-      {!loading && children}
+      {!loading && children} */}
     </>
   );
 }
