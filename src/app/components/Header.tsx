@@ -15,7 +15,7 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <div className="relative w-40 h-12">
               <Image
-                src="/logo.png"
+                src="/logo-white.png"
                 fill
                 className="object-contain"
                 alt="COMBINE ZENITH LOGO"
