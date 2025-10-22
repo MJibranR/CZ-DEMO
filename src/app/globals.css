@@ -1,85 +1,39 @@
-@import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* 🌈 Define theme colors */
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-/* 🌙 Dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-/* 🧩 Load custom fonts */
+/* Main headings font: Glancyr */
 @font-face {
-  font-family: "Glancyr";
-  src: url("/fonts/Glancyr-Regular.woff2") format("woff2");
+  font-family: 'Glancyr';
+  src: url('/fonts/Glancyr-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-family: 'Glancyr';
+  src: url('/fonts/Glancyr-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glancyr';
+  src: url('/fonts/Glancyr-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
+/* Body & subheading font: Montserrat */
 @font-face {
-  font-family: "Surgena";
-  src: url("/fonts/Surgena-Regular.woff2") format("woff2");
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
-
-/* 🧭 Map custom font variables */
-:root {
-  --font-glancyr: "Glancyr", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
-  --font-surgena: "Surgena", sans-serif;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
 }
+/* Add other weights as needed */
 
-/* 🎨 Tailwind theme integration */
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-montserrat);
-  --font-mono: var(--font-geist-mono);
-}
-
-/* 🌌 Body styling */
+/* Default body font */
 body {
-  font-family: var(--font-montserrat);
-  color: var(--color-foreground);
-  background: linear-gradient(
-    to bottom right,
-    #000000 0%,
-    #200053 50%,
-    #000000 100%
-  );
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* ✨ Heading styles */
-h2,
-h3,
-h4,
-h5,
-h6,
-br {
-  font-family: var(--font-glancyr);
-}
-
-h1,
-.font-surgena {
-  font-family: var(--font-surgena);
+  font-family: 'Montserrat', sans-serif;
 }
