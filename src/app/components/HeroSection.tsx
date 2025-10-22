@@ -4,13 +4,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="mt-20 relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-darkblue-900 to-slate-900 overflow-hidden">
-      {/* Background Circles */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 -left-20 w-72 h-72 bg-darkblue-600/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 -right-20 w-72 h-72 bg-darkblue-600/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-darkblue-500/10 rounded-full blur-3xl" />
-      </div>
+    <section className="mt-20 relative min-h-screen flex items-center justify-center overflow-hidden">
 
       <div className="container mx-auto px-6 py-20 relative z-10 ml-25 mr-25">
         <div className="grid lg:grid-cols-2 gap-16 items-center">

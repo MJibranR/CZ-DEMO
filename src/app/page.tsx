@@ -7,7 +7,7 @@ import CTASection from '@/app/components/CTASection'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-purple-900 via-purple-950 to-black">
+    <main className="min-h-screen">
       {/* <Header /> */}
       <HeroSection />
       <ServicesSection />
