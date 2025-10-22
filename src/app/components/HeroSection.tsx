@@ -31,20 +31,29 @@ export default function HeroSection() {
 </button>
           </div>
 
-          {/* Image Content */}
 <>
   <style>{`
-    @keyframes spinBoth {
-      0% { transform: rotate(0deg) scale(1); }
-      25% { transform: rotate(180deg) scale(1.02); }
-      50% { transform: rotate(360deg) scale(1); }
-      75% { transform: rotate(180deg) scale(1.02); }
-      100% { transform: rotate(0deg) scale(1); }
+    @keyframes starDrift {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+      25% {
+        transform: translate(20px, 20px) scale(1.02);
+      }
+      50% {
+        transform: translate(-20px, 20px) scale(1);
+      }
+      75% {
+        transform: translate(0, -20px) scale(1.02);
+      }
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
     }
   `}</style>
 
-  <div className="relative flex justify-center ml-[30px] transition-transform duration-700 ease-in-out animate-[spinBoth_4s_linear_infinite] hover:scale-125 hover:animate-[spinBoth_4s_linear_infinite]">
-    <div className="relative">
+  <div className="relative flex justify-center ml-[30px] transition-transform duration-700 ease-in-out hover:scale-125">
+    <div className="relative animate-[starDrift_6s_ease-in-out_infinite]">
       <Image
         src="/star.png"
         width={600}
@@ -55,6 +64,7 @@ export default function HeroSection() {
     </div>
   </div>
 </>
+
 
         </div>
       </div>
