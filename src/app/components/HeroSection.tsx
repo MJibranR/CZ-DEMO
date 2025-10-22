@@ -52,17 +52,18 @@ export default function HeroSection() {
     }
   `}</style>
 
-  <div className="relative flex justify-center ml-[30px] transition-transform duration-700 ease-in-out hover:scale-125">
-    <div className="relative animate-[starDrift_6s_ease-in-out_infinite]">
-      <Image
-        src="/star.png"
-        width={600}
-        height={600}
-        alt="Digital Vision Illustration"
-        className="relative z-10 drop-shadow-2xl"
-      />
-    </div>
+<div className="relative justify-center ml-[30px] transition-transform duration-700 ease-in-out hover:scale-125 hidden md:flex">
+  <div className="relative animate-[starDrift_6s_ease-in-out_infinite]">
+    <Image
+      src="/star.png"
+      width={600}
+      height={600}
+      alt="Digital Vision Illustration"
+      className="relative z-10 drop-shadow-2xl"
+    />
   </div>
+</div>
+
 </>
 
 
