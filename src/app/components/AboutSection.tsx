@@ -18,23 +18,55 @@ export default function AboutSection() {
         </div>
 
         {/* Trusted By Section */}
-        <div className="bg-purple-800/30 backdrop-blur-sm rounded-3xl p-12 md:p-16">
+        <div className="bg-purple-800/30 backdrop-blur-sm rounded-3xl p-12 md:p-16 overflow-hidden">
           <h3 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
             Trusted by Industry Leaders.
           </h3>
-          
-          {/* Logo Grid Placeholder */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
-              <div
-                key={index}
-                className="w-32 h-16 bg-[#b5a6d0] rounded-lg flex items-center justify-center  transition-colors group"
-              >
-                <div className="text-white group-hover:text-accent transition-colors font-semibold">
-                  Logo {index}
+
+          {/* Row 1 - moves left */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-marquee-left gap-8">
+              {[...Array(6)].map((_, index) => (
+                <div
+                  key={`row1-${index}`}
+                  className="w-32 h-16 bg-[#b5a6d0] rounded-lg flex items-center justify-center text-white font-semibold"
+                >
+                  Logo {index + 1}
                 </div>
-              </div>
-            ))}
+              ))}
+              {/* Duplicate for smooth loop */}
+              {[...Array(6)].map((_, index) => (
+                <div
+                  key={`row1-copy-${index}`}
+                  className="w-32 h-16 bg-[#b5a6d0] rounded-lg flex items-center justify-center text-white font-semibold"
+                >
+                  Logo {index + 1}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Row 2 - moves right */}
+          <div className="relative overflow-hidden mt-12">
+            <div className="flex animate-marquee-right gap-8">
+              {[...Array(12)].map((_, index) => (
+                <div
+                  key={`row2-${index}`}
+                  className="w-32 h-16 bg-[#b5a6d0] rounded-lg flex items-center justify-center text-white font-semibold"
+                >
+                  Logo {index + 1}
+                </div>
+              ))}
+              {/* Duplicate for seamless loop */}
+              {[...Array(12)].map((_, index) => (
+                <div
+                  key={`row2-copy-${index}`}
+                  className="w-32 h-16 bg-[#b5a6d0] rounded-lg flex items-center justify-center text-white font-semibold"
+                >
+                  Logo {index + 1}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

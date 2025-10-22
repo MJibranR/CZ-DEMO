@@ -34,16 +34,16 @@ export default function HeroSection() {
           {/* Image Content */}
 <>
   <style>{`
-    @keyframes moveSpin {
-      0% { transform: translateX(0) rotate(0deg) scale(1); }
-      25% { transform: translateX(15px) rotate(10deg) scale(1.02); }
-      50% { transform: translateX(0) rotate(0deg) scale(1); }
-      75% { transform: translateX(-15px) rotate(-10deg) scale(1.02); }
-      100% { transform: translateX(0) rotate(0deg) scale(1); }
+    @keyframes spinBoth {
+      0% { transform: rotate(0deg) scale(1); }
+      25% { transform: rotate(180deg) scale(1.02); }
+      50% { transform: rotate(360deg) scale(1); }
+      75% { transform: rotate(180deg) scale(1.02); }
+      100% { transform: rotate(0deg) scale(1); }
     }
   `}</style>
 
-  <div className="relative flex justify-center ml-[30px] transition-transform duration-700 ease-in-out animate-[moveSpin_2s_ease-in-out_infinite] hover:scale-125 hover:animate-[moveSpin_2s_ease-in-out_infinite]">
+  <div className="relative flex justify-center ml-[30px] transition-transform duration-700 ease-in-out animate-[spinBoth_4s_linear_infinite] hover:scale-125 hover:animate-[spinBoth_4s_linear_infinite]">
     <div className="relative">
       <Image
         src="/star.png"
