@@ -37,7 +37,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-purple-900 via-purple-950 to-purple-900">
+    <section className="py-20 px-6">
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
@@ -57,11 +57,11 @@ export default function ServicesSection() {
             return (
               <div
                 key={index}
-                className="group relative bg-purple-800/40 backdrop-blur-sm rounded-2xl p-8 border border-purple-700/50 hover:bg-purple-700/50 hover:border-purple-600 transition-all duration-300 hover:transform hover:scale-105"
+                className="group relative bg-[#685885] backdrop-blur-sm rounded-2xl p-8  hover:bg-primary hover:border-accent transition-all duration-300 hover:transform hover:scale-105"
               >
                 {/* Icon */}
                 <div className="mb-6 flex justify-center">
-                  <div className="w-16 h-16 bg-purple-600/50 rounded-lg flex items-center justify-center group-hover:bg-purple-500/60 transition-colors">
+                  <div className="w-16 h-16 bg-[#b5a6d0] rounded-lg flex items-center justify-center transition-colors">
                     <Icon className="w-8 h-8 text-white" strokeWidth={1.5} />
                   </div>
                 </div>
@@ -76,8 +76,7 @@ export default function ServicesSection() {
                   {service.description}
                 </p>
 
-                {/* Hover Effect Gradient */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/0 to-pink-500/0 group-hover:from-purple-500/10 group-hover:to-pink-500/10 transition-all duration-300 pointer-events-none" />
+
               </div>
             );
           })}

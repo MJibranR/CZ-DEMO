@@ -29,7 +29,7 @@ export default function MeetTheTeam() {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 overflow-hidden">
+    <section className="relative py-20 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-32 -left-32 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl" />
@@ -108,7 +108,7 @@ export default function MeetTheTeam() {
     Let Combine Zenith be your strategic partner in navigating the complexities of the
     modern market. We&apos;re here to help you achieve unprecedented success.
   </p>
-  <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25 font-semibold">
+  <button className="px-8 py-3 bg-secondary text-white rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25 font-semibold">
     Contact Us Today
   </button>
 </div>

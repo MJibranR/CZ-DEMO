@@ -2,7 +2,7 @@
 
 export default function AboutSection() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-purple-900 via-purple-950 to-purple-900">
+    <section className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         {/* About Content */}
         <div className="text-center mb-20">
@@ -18,7 +18,7 @@ export default function AboutSection() {
         </div>
 
         {/* Trusted By Section */}
-        <div className="bg-purple-800/30 backdrop-blur-sm rounded-3xl p-12 md:p-16 border border-purple-700/50">
+        <div className="bg-purple-800/30 backdrop-blur-sm rounded-3xl p-12 md:p-16">
           <h3 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
             Trusted by Industry Leaders.
           </h3>
@@ -28,9 +28,9 @@ export default function AboutSection() {
             {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
               <div
                 key={index}
-                className="w-32 h-16 bg-purple-700/30 rounded-lg flex items-center justify-center hover:bg-purple-600/40 transition-colors group"
+                className="w-32 h-16 bg-[#b5a6d0] rounded-lg flex items-center justify-center  transition-colors group"
               >
-                <div className="text-purple-300 group-hover:text-purple-200 transition-colors font-semibold">
+                <div className="text-white group-hover:text-accent transition-colors font-semibold">
                   Logo {index}
                 </div>
               </div>

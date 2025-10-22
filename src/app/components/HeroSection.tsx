@@ -4,16 +4,14 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="mt-20 relative min-h-screen flex items-center justify-center overflow-hidden">
-
-      <div className="container mx-auto px-6 py-20 relative z-10 ml-25 mr-25">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden m-10 mt-52 lg:mt-20">
+     <div className="container mx-32 relative">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
           <div className="space-y-8 ">
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-6l lg:text-7l text-white leading-tight">
+              <h1 className="text-5xl md:text-6l lg:text-7l text-white">
                 Transforming Visions
-                <br />
                 Into digital Success
               </h1>
             </div>
@@ -28,25 +26,36 @@ export default function HeroSection() {
               </p>
             </div>
 
-<button className="px-8 py-3 bg-white text-black rounded-l-xl rounded-r-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl font-semibold text-lg">
+<button className="px-8 py-3  text-white rounded-l-xl rounded-r-xl bg-[#685885] transition-all transform hover:scale-105 shadow-2xl font-semibold text-lg">
   Read More
 </button>
           </div>
 
           {/* Image Content */}
-          <div className="relative flex justify-center ml-30">
-            <div className="relative">
-              <Image
-                src="/star.png"
-                width={600}
-                height={600}
-                alt="Digital Vision Illustration"
-                className="relative z-10 drop-shadow-2xl"
-              />
-              
-              {/* Floating elements with connecting line - Removed for cleaner look */}
-            </div>
-          </div>
+<>
+  <style>{`
+    @keyframes moveSpin {
+      0% { transform: translateX(0) rotate(0deg) scale(1); }
+      25% { transform: translateX(15px) rotate(10deg) scale(1.02); }
+      50% { transform: translateX(0) rotate(0deg) scale(1); }
+      75% { transform: translateX(-15px) rotate(-10deg) scale(1.02); }
+      100% { transform: translateX(0) rotate(0deg) scale(1); }
+    }
+  `}</style>
+
+  <div className="relative flex justify-center ml-[30px] transition-transform duration-700 ease-in-out animate-[moveSpin_2s_ease-in-out_infinite] hover:scale-125 hover:animate-[moveSpin_2s_ease-in-out_infinite]">
+    <div className="relative">
+      <Image
+        src="/star.png"
+        width={600}
+        height={600}
+        alt="Digital Vision Illustration"
+        className="relative z-10 drop-shadow-2xl"
+      />
+    </div>
+  </div>
+</>
+
         </div>
       </div>
 
