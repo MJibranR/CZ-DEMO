@@ -28,10 +28,10 @@ export default function AboutStory() {
     driving meaningful connections in an ever-evolving digital landscape. Our mission
     is to empower businesses to not just compete, but to lead.
   </p>
-  <p className="space-y-8 text-center max-w-3xl mx-auto">
-Founded on principles of creativity, integrity, and relentless fexcellence, we craft bespoke strategies that
+  <p className="space-y-8 text-center text-white max-w-3xl mx-auto">
+Founded on principles of creativity, integrity, and relentless excellence, we craft bespoke strategies that
 resonate with your audience and deliver measurable impact. We&apos;re not just service providers; we are your partners in
-growth, dedicated to uncovering your unique potential and projecting it powerfully to theworld. Join us on a journey to
+growth, dedicated to uncovering your unique potential and projecting it powerfully to the world. Join us on a journey to
 redefine what&apos;s possible for your brand.
   </p>
 </div>
