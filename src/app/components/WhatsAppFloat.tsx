@@ -20,7 +20,7 @@ export default function WhatsAppFloat() {
         <div className="relative">
           <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-green-500/30 transition-all duration-300 border-2 border-white">
             <Image
-              src="/whatsapp.png" 
+              src="/Whatsapp.png" 
               alt="WhatsApp" 
               width={40}
               height={40}
