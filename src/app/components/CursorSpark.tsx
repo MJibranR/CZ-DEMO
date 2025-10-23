@@ -56,6 +56,9 @@ export default function CursorSpark() {
           star.style.backgroundColor = "#9b5de5";
           star.style.boxShadow = `0 0 ${8 + i * 2}px rgba(155, 93, 229, 0.8)`;
           star.style.filter = `blur(${i * 0.2}px)`;
+          
+          // Ensure cursor appears above all content including popups
+          star.style.zIndex = "9999";
         }
       }
 
@@ -74,7 +77,7 @@ export default function CursorSpark() {
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 pointer-events-none z-50"
+      className="fixed top-0 left-0 pointer-events-none z-[9999]"
     >
       {Array.from({ length: numDots }).map((_, i) => (
         <span key={i} className="absolute transition-all duration-75" />

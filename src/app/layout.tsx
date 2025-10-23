@@ -5,6 +5,7 @@ import Header from "@/app/components/Header";
 import CursorSpark from "./components/CursorSpark";
 import Footer from "@/app/components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import Agent from "./components/Agent";
 
 const surgena = localFont({
   src: [
@@ -67,6 +68,7 @@ export default function RootLayout({
         <CursorSpark />
         {children}
          <WhatsAppFloat />
+         <Agent />
         <Footer/>
       </body>
     </html>

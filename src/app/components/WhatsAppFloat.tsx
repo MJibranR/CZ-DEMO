@@ -9,7 +9,7 @@ export default function WhatsAppFloat() {
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-24 right-6 z-50">
       <a
         href={whatsappUrl}
         target="_blank"
@@ -18,16 +18,16 @@ export default function WhatsAppFloat() {
         aria-label="Contact us on WhatsApp"
       >
         <div className="relative">
-          <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-green-500/30 transition-all duration-300 border-2 border-white">
-            <Image
-              src="/whatsapp.png" 
+          <div className="w-14 h-14 bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-green-500/30 transition-all duration-300 border-2 border-white">
+            <Image 
+              src="/Whatsapp.png" 
               alt="WhatsApp" 
-              width={40}
-              height={40}
+              width={28}
+              height={28}
               className="w-8 h-8"
             />
           </div>
-          <div className="absolute inset-0 w-16 h-16 bg-green-500 rounded-full animate-ping opacity-20"></div>
+          <div className="absolute inset-0 w-14 h-14 bg-green-500 rounded-full animate-ping opacity-20"></div>
         </div>
       </a>
     </div>

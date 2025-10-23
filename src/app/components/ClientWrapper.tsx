@@ -1,17 +1,24 @@
-"use client";
+'use client';
 
-import CursorSpark from "./CursorSpark";
-// import LoadingVideo from "./LoadingVideo";
+import { useState, useRef, useEffect } from 'react';
+import WhatsAppFloat from './WhatsAppFloat';
+import TerraAIAssistant from './Agent';
 
-export default function ClientWrapper({ }: { children: React.ReactNode }) {
+export default function ClientWrapper() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <>
-      <CursorSpark />
-
-      {/* {loading && <LoadingVideo onFinish={() => setLoading(false)} />}
-
-      {!loading && children} */}
+      <WhatsAppFloat />
+      <TerraAIAssistant />
     </>
   );
 }
