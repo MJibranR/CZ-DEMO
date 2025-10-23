@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import WhatsAppFloat from './WhatsAppFloat';
 import TerraAIAssistant from './Agent';
 

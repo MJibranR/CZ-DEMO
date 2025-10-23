@@ -8,7 +8,7 @@ export default function DarkThemeAgent() {
   const [messages, setMessages] = useState([
     {
       id: 1,
-      text: "Transforming Visions Into Digital Success. Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.",
+      text: "Hey dear, I hope you are fine! I'm Combine Zenith's AI-powered virtual assistant. How can I assist you with digital transformation today?",
       isBot: true,
       timestamp: new Date()
     }
