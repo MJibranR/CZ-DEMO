@@ -62,8 +62,8 @@ export default function CoreValues() {
     <section className="relative py-20 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-32 -left-32 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl" />
-        <div className="absolute -bottom-32 -right-32 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl" />
+        <div className="absolute -top-32 -left-32 w-64 h-64 rounded-full blur-3xl" />
+        <div className="absolute -bottom-32 -right-32 w-64 h-64 rounded-full blur-3xl" />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
       </div>
 
@@ -84,13 +84,13 @@ export default function CoreValues() {
                 className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-purple-400/30 transition-all duration-300 hover:transform hover:scale-105 group"
               >
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center group-hover:from-purple-600 group-hover:to-pink-600 transition-all duration-300">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center group-hover:from-purple-600 group-hover:to-pink-600 transition-all duration-300">
                     <div className="text-white">
                       {value.icon}
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
+                    <h3 className="text-xl font-bold text-white mb-3 transition-all duration-300">
                       {value.title}
                     </h3>
                     <p className="text-gray-300 leading-relaxed">
