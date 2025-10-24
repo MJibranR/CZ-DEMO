@@ -90,7 +90,7 @@ export default function DarkThemeAgent() {
       {/* Floating Agent Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-[9990] w-14 h-14 bg-gradient-to-br from-gray-900 to-black rounded-full flex items-center justify-center shadow-2xl hover:shadow-gray-500/30 transition-all duration-300 hover:scale-110 border border-gray-700"
+        className="fixed bottom-6 right-6 z-[9990] w-16 h-16 bg-gradient-to-br from-gray-900 to-black rounded-full flex items-center justify-center shadow-2xl hover:shadow-gray-500/30 transition-all duration-300 hover:scale-110 border border-gray-700"
       >
         <Bot className="w-6 h-6 text-gray-300" />
         <div className="absolute inset-0 w-14 h-14 bg-gray-800 rounded-full animate-ping opacity-20"></div>
